@@ -1,0 +1,19 @@
+{
+  "name": "skippy-workout",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "OpenClaw workout coach and tracker with local web UI and SQLite storage",
+  "bin": {
+    "skippy-workout": "./bin/cli.js",
+    "skippy-workout-server": "./bin/server.js"
+  },
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node bin/server.js",
+    "serve": "node bin/server.js",
+    "workout": "node bin/cli.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0"
+  }
+}
